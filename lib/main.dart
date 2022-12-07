@@ -46,7 +46,7 @@ class _DashState extends State<Dash> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('WHATSAPP NUMBER'),
+            const Text('Send a WhatsApp message without saving a number'),
             Padding(
               padding: const EdgeInsets.all(20),
               child: TextField(
@@ -63,7 +63,7 @@ class _DashState extends State<Dash> {
                     prefixIcon: const Icon(
                       Icons.numbers_rounded,
                     ),
-                    hintText: 'Enter mobile number',
+                    hintText: 'Enter WhatsApp Number',
                     filled: true),
                 keyboardType: TextInputType.number,
                 textInputAction: TextInputAction.done,

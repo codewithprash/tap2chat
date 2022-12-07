@@ -59224,7 +59224,7 @@ A.Gz.prototype={
 P(a){var s,r,q,p=null
 this.a.toString
 s=A.a_2("Tap2Chat",p,p,p,p,p,p)
-r=A.aaw(p,p,p,p,p,p,p,p,!0,new A.f_(4,A.qs(30),B.vK),p,p,p,p,p,!0,p,p,p,p,new A.f_(4,A.qs(30),B.vJ),p,p,p,p,p,p,"Enter mobile number",p,p,p,p,!1,p,p,p,p,p,B.Aa,p,p,p,p,p,p,p,p,p,p,p)
+r=A.aaw(p,p,p,p,p,p,p,p,!0,new A.f_(4,A.qs(30),B.vK),p,p,p,p,p,!0,p,p,p,p,new A.f_(4,A.qs(30),B.vJ),p,p,p,p,p,p,"Enter WhatsApp Number",p,p,p,p,!1,p,p,p,p,p,B.Aa,p,p,p,p,p,p,p,p,p,p,p)
 q=B.K9
 return new A.uq(new A.qn(s,B.dh,!0,new A.IW(p,p,1/0,56),p),A.z4(A.ah8(A.a([B.K4,new A.hp(B.lG,new A.v4(this.d,r,B.GE,B.ka,B.G6,B.G7,q,!0,p),p),A.Bf(p,A.nd(p,B.wP,p,B.vU,50,B.zy,p,p),B.aN,!1,p,p,p,p,p,p,p,p,p,p,new A.a0U(this),p,p,p,p,p,p)],t.R),B.DB,B.rc),p,p),p)}}
 A.a0U.prototype={
@@ -63546,7 +63546,7 @@ B.Jg=new A.p(!0,B.j,null,"Roboto",null,null,null,null,null,null,null,null,null,n
 B.IU=new A.p(!0,B.j,null,"Roboto",null,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"whiteMountainView labelSmall",null,null,null,null)
 B.K3=new A.dn(B.IE,B.JN,B.Jw,B.Ho,B.Jo,B.Ix,B.JR,B.HP,B.Ig,B.Jj,B.Hj,B.Jy,B.Jm,B.Jg,B.IU)
 B.v3=new A.vc(1,"longestLine")
-B.K4=new A.m4("WHATSAPP NUMBER",null,null,null,null,null,null,null,null)
+B.K4=new A.m4("Send a WhatsApp message without saving a number",null,null,null,null,null,null,null,null)
 B.N9=new A.F7(0,"system")
 B.K6=new A.vd(null)
 B.eo=new A.ve(0,"clamp")
