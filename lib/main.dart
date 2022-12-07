@@ -76,7 +76,7 @@ class _DashState extends State<Dash> {
                   print(num);
                 }
                 String url =
-                    'https://api.whatsapp.com/send/?phone=91$num&amp;text&amp;type=phone_number&amp;app_absent=0';
+                    'https://api.whatsapp.com/send/?phone=91$num&text=Hi&type=phone_number&app_absent=0';
 
                 if (await canLaunchUrlString(url)) {
                   await launchUrlString(url);

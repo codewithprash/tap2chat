@@ -59231,7 +59231,7 @@ A.a0U.prototype={
 $0(){var s=0,r=A.a3(t.H),q=this,p,o
 var $async$$0=A.a4(function(a,b){if(a===1)return A.a0(b,r)
 while(true)switch(s){case 0:p=B.c.yx(q.a.d.a.a)
-o="https://api.whatsapp.com/send/?phone=91"+p+"&amp;text&amp;type=phone_number&amp;app_absent=0"
+o="https://api.whatsapp.com/send/?phone=91"+p+"&text=Hi&type=phone_number&app_absent=0"
 s=4
 return A.a6(A.a8G(o),$async$$0)
 case 4:s=b?2:3
