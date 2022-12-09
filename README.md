@@ -1,10 +1,10 @@
-# Tap2chat : [Try this app on browser](https://tap2chat.pages.dev)
+# Tap2chat : [Try this App on browser](https://tap2chat.pages.dev)
 
 ![play_store_feature_graphic](https://user-images.githubusercontent.com/87913082/206685648-c79e0b27-756d-45bc-839a-a8c9177967fc.png)
 
 ## Getting Started
 
-Send a WhatsApp message without saving a number.
+Send WhatsApp messages without saving phone number
 
 A few resources to get you started if this is your first Flutter project:
 
