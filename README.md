@@ -1,4 +1,4 @@
-# tap2chat : [Try this app on browser](https://tap2chat.pages.dev)
+# Tap2chat : [Try this app on browser](https://tap2chat.pages.dev)
 
 ![play_store_feature_graphic](https://user-images.githubusercontent.com/87913082/206685648-c79e0b27-756d-45bc-839a-a8c9177967fc.png)
 
