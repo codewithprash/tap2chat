@@ -38,16 +38,23 @@ class _DashState extends State<Dash> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: const Color(0xFF075e54),
+        backgroundColor: const Color(0xFF128C7F),
         title: Text(widget.title),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Send WhatsApp messages without saving phone number'),
             Padding(
-              padding: const EdgeInsets.all(20),
+              padding: const EdgeInsets.all(40.0),
+              child: Text(
+                'Send WhatsApp messages without saving phone number',
+                style: Theme.of(context).textTheme.headline5,
+                overflow: TextOverflow.visible,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(30),
               child: TextField(
                 controller: _mobnum,
                 decoration: InputDecoration(
@@ -56,7 +63,7 @@ class _DashState extends State<Dash> {
                       borderRadius: BorderRadius.circular(30),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(color: Color(0xFF075e54)),
+                      borderSide: const BorderSide(color: Color(0xFF128C7F)),
                       borderRadius: BorderRadius.circular(30),
                     ),
                     prefixIcon: const Icon(
@@ -68,8 +75,29 @@ class _DashState extends State<Dash> {
                 textInputAction: TextInputAction.done,
               ),
             ),
-            GestureDetector(
-              onTap: () async {
+            // GestureDetector(
+            //   onTap: () async {
+            //     String num = _mobnum.text.trim();
+
+            //     String url =
+            //         'https://api.whatsapp.com/send/?phone=91$num&text=Hi';
+
+            //     if (await canLaunchUrlString(url)) {
+            //       await launchUrlString(url);
+            //     }
+            //   },
+            //   child: Container(
+            //     margin: const EdgeInsets.all(80),
+            //     height: 50,
+            //     decoration: const BoxDecoration(
+            //         color: Color(0xFF075e54),
+            //         borderRadius: BorderRadius.all(Radius.circular(30))),
+            //     child: const Center(child: Text("Tap to Chat")),
+            //   ),
+            // ),
+
+            ElevatedButton(
+              onPressed: () async {
                 String num = _mobnum.text.trim();
 
                 String url =
@@ -79,14 +107,14 @@ class _DashState extends State<Dash> {
                   await launchUrlString(url);
                 }
               },
-              child: Container(
-                margin: const EdgeInsets.all(80),
-                height: 50,
-                decoration: const BoxDecoration(
-                    color: Color(0xFF075e54),
-                    borderRadius: BorderRadius.all(Radius.circular(30))),
-                child: const Center(child: Text("Tap to Chat")),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFF128C7F),
+                textStyle: const TextStyle(fontSize: 18),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 40, vertical: 25),
+                shape: const StadiumBorder(),
               ),
+              child: const Text("Continue to Chat"),
             ),
           ],
         ),
