@@ -14,10 +14,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Tap 2 chat',
       theme: ThemeData(
-          brightness: Brightness.dark,
-          primaryColor: const Color(0xFF075e54),
-          primarySwatch: Colors.green),
-      home: const Dash(title: 'Tap 2 chat'),
+        primaryColor: const Color(0xFF075e54),
+        primarySwatch: Colors.green,
+      ),
+      home: const Dash(title: 'OnTap'),
     );
   }
 }
@@ -37,12 +37,12 @@ class _DashState extends State<Dash> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
-          onPressed: () {},
-          icon: Image.asset('icon.png'),
-        ),
+        centerTitle: true,
         backgroundColor: const Color(0xFF128C7F),
-        title: Text(widget.title),
+        title: Text(
+          widget.title,
+          style: Theme.of(context).textTheme.headline4,
+        ),
       ),
       body: Center(
         child: Column(
@@ -77,27 +77,6 @@ class _DashState extends State<Dash> {
                 textInputAction: TextInputAction.done,
               ),
             ),
-            // GestureDetector(
-            //   onTap: () async {
-            //     String num = _mobnum.text.trim();
-
-            //     String url =
-            //         'https://api.whatsapp.com/send/?phone=91$num&text=Hi';
-
-            //     if (await canLaunchUrlString(url)) {
-            //       await launchUrlString(url);
-            //     }
-            //   },
-            //   child: Container(
-            //     margin: const EdgeInsets.all(80),
-            //     height: 50,
-            //     decoration: const BoxDecoration(
-            //         color: Color(0xFF075e54),
-            //         borderRadius: BorderRadius.all(Radius.circular(30))),
-            //     child: const Center(child: Text("Tap to Chat")),
-            //   ),
-            // ),
-
             ElevatedButton(
               onPressed: () async {
                 String num = _mobnum.text.trim();
@@ -124,3 +103,24 @@ class _DashState extends State<Dash> {
     );
   }
 }
+
+// GestureDetector(
+            //   onTap: () async {
+            //     String num = _mobnum.text.trim();
+
+            //     String url =
+            //         'https://api.whatsapp.com/send/?phone=91$num&text=Hi';
+
+            //     if (await canLaunchUrlString(url)) {
+            //       await launchUrlString(url);
+            //     }
+            //   },
+            //   child: Container(
+            //     margin: const EdgeInsets.all(80),
+            //     height: 50,
+            //     decoration: const BoxDecoration(
+            //         color: Color(0xFF075e54),
+            //         borderRadius: BorderRadius.all(Radius.circular(30))),
+            //     child: const Center(child: Text("Tap to Chat")),
+            //   ),
+            // ),
