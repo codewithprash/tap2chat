@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
@@ -15,9 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Tap2chat',
       theme: ThemeData(
-        primaryColorDark: const Color(0xFF075e54),
-        brightness: Brightness.dark,
-      ),
+          brightness: Brightness.dark,
+          primaryColor: const Color(0xFF075e54),
+          primarySwatch: Colors.green),
       home: const Dash(title: 'Tap2Chat'),
     );
   }
@@ -46,7 +45,7 @@ class _DashState extends State<Dash> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Send a WhatsApp message without saving a number'),
+            const Text('Send WhatsApp messages without saving phone number'),
             Padding(
               padding: const EdgeInsets.all(20),
               child: TextField(
@@ -72,11 +71,9 @@ class _DashState extends State<Dash> {
             GestureDetector(
               onTap: () async {
                 String num = _mobnum.text.trim();
-                if (kDebugMode) {
-                  print(num);
-                }
+
                 String url =
-                    'https://api.whatsapp.com/send/?phone=91$num&text=Hi&type=phone_number&app_absent=0';
+                    'https://api.whatsapp.com/send/?phone=91$num&text=Hi';
 
                 if (await canLaunchUrlString(url)) {
                   await launchUrlString(url);
