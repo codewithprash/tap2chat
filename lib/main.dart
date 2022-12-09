@@ -12,12 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Tap2chat',
+      title: 'Tap 2 chat',
       theme: ThemeData(
           brightness: Brightness.dark,
           primaryColor: const Color(0xFF075e54),
           primarySwatch: Colors.green),
-      home: const Dash(title: 'Tap2Chat'),
+      home: const Dash(title: 'Tap 2 chat'),
     );
   }
 }
@@ -37,13 +37,15 @@ class _DashState extends State<Dash> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
+        leading: IconButton(
+          onPressed: () {},
+          icon: Image.asset('icon.png'),
+        ),
         backgroundColor: const Color(0xFF128C7F),
         title: Text(widget.title),
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(
               padding: const EdgeInsets.all(40.0),
@@ -109,9 +111,9 @@ class _DashState extends State<Dash> {
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: const Color(0xFF128C7F),
-                textStyle: const TextStyle(fontSize: 18),
+                textStyle: const TextStyle(fontSize: 16),
                 padding:
-                    const EdgeInsets.symmetric(horizontal: 40, vertical: 25),
+                    const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
                 shape: const StadiumBorder(),
               ),
               child: const Text("Continue to Chat"),
