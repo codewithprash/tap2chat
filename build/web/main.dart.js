@@ -59878,7 +59878,7 @@ A.Ce.prototype={
 O(a){var s=null,r=A.acN(s,B.di,B.Ej,s)
 return new A.tq(new A.Bu(new A.F3(B.ka,$.aD()),s),"Tap2Chat",r,s)}}
 A.Bu.prototype={
-O(a){var s=null,r=A.v7("WhatsApp",s,s,s,A.aB(a).RG.e,s,s),q=A.v7("Send WhatsApp messages without saving phone number",s,B.v4,s,A.aB(a).RG.f,s,s),p=A.abm(s,s,s,s,s,s,s,s,!0,new A.f2(4,A.qy(30),B.vN),s,s,s,s,s,!0,s,s,s,s,new A.f2(4,A.qy(30),B.vO),s,s,s,s,s,s,"Enter WhatsApp Number",s,s,s,s,!1,s,s,s,s,s,s,s,s,s,"+91 ",s,s,s,s,s,s,s),o=B.Kw
+O(a){var s=null,r=A.v7("Open WhatsApp",s,s,s,A.aB(a).RG.e,s,s),q=A.v7("Send WhatsApp messages without saving phone number",s,B.v4,s,A.aB(a).RG.r,s,s),p=A.abm(s,s,s,s,s,s,s,s,!0,new A.f2(4,A.qy(30),B.vN),s,s,s,s,s,!0,s,s,s,s,new A.f2(4,A.qy(30),B.vO),s,s,s,s,s,s,"Enter WhatsApp Number",s,s,s,s,!1,s,s,s,s,s,s,s,s,s,"+91 ",s,s,s,s,s,s,s),o=B.Kw
 return new A.uv(new A.qt(r,B.di,!0,new A.J9(s,s,1/0,56),s),A.ai3(A.a([new A.f3(B.zQ,q,s),new A.f3(B.zO,new A.vb(this.c,p,B.H0,B.kb,B.Jl,B.Gu,B.Gv,o,10,!0,s),s),B.Gs,new A.AI(new A.Sd(this),s,s,s,A.ab3(s,s,B.di,s,s,s,s,s,s,s,s,s,B.zP,s,B.uR,s,s,B.Iz,s),B.H,s,!1,s,B.Ks,s)],t.R),B.rc,B.rd),s)}}
 A.Sd.prototype={
 $0(){var s=0,r=A.a3(t.H),q=this,p
@@ -63948,7 +63948,7 @@ B.Gp=new A.W(22,22)
 B.Gq=new A.W(64,36)
 B.Gr=new A.W(1/0,1/0)
 B.el=new A.kg(0,0,null,null)
-B.Gs=new A.kg(null,50,null,null)
+B.Gs=new A.kg(null,30,null,null)
 B.bJ=new A.kg(null,null,null,null)
 B.Gt=new A.uV(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Gu=new A.EF(1,"enabled")
