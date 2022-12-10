@@ -50,6 +50,7 @@ class Home extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 30),
             child: TextField(
               controller: _mobnum,
+              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
                     borderSide: const BorderSide(color: Colors.grey),
@@ -60,9 +61,10 @@ class Home extends StatelessWidget {
                     borderRadius: BorderRadius.circular(30),
                   ),
                   hintText: 'Enter WhatsApp Number',
-                  prefixText: "+91",
+                  prefixText: "+91 ",
                   filled: true),
               keyboardType: TextInputType.number,
+              maxLength: 10,
               textInputAction: TextInputAction.done,
             ),
           ),
