@@ -1,6 +1,6 @@
 # Tap2chat : [Try this App on browser](https://tap2chat.pages.dev)
 
-![play_store_feature_graphic](https://user-images.githubusercontent.com/87913082/206685648-c79e0b27-756d-45bc-839a-a8c9177967fc.png)
+![play_store_feature_graphic](https://user-images.githubusercontent.com/87913082/206878472-128f6ce0-08bf-446e-8a59-f59af9b8c17e.png)
 
 ## Getting Started
 
