@@ -12,12 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Tap to Chat',
+      title: 'Tap2Chat',
       theme: ThemeData(
-        primaryColor: const Color(0xFF075e54),
+        primaryColor: const Color(0xFF128C7F),
         primarySwatch: Colors.green,
       ),
-      home: const Dash(title: 'OnTap'),
+      home: const Dash(title: 'WhatsApp'),
     );
   }
 }
@@ -61,7 +61,7 @@ class _DashState extends State<Dash> {
                 controller: _mobnum,
                 decoration: InputDecoration(
                     enabledBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(color: Colors.white),
+                      borderSide: const BorderSide(color: Colors.grey),
                       borderRadius: BorderRadius.circular(30),
                     ),
                     focusedBorder: OutlineInputBorder(
