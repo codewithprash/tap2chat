@@ -32,7 +32,7 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: const Color(0xFF128C7F),
         title: Text(
-          "WhatsApp",
+          "Open WhatsApp",
           style: Theme.of(context).textTheme.headline4,
         ),
       ),
@@ -53,7 +53,7 @@ class Home extends StatelessWidget {
               style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(color: Colors.grey),
+                    borderSide: const BorderSide(color: Colors.white),
                     borderRadius: BorderRadius.circular(30),
                   ),
                   focusedBorder: OutlineInputBorder(
@@ -69,7 +69,7 @@ class Home extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 50,
+            height: 30,
           ),
           ElevatedButton(
             onPressed: () async {
